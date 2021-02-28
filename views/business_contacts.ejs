@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- All code containing title, stylesheet link, etc. -->
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <!-- Contains navigation bar -->
+    <%- include('../partials/header', {"currentMenu": "business_contacts"}); %>
+</header>
+
+<main>
+    <%- include('../partials/business_contacts', {"contacts": contacts}); %>
+</main>
+
+</body>
+</html>

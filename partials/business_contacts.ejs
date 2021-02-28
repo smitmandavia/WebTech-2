@@ -1,0 +1,35 @@
+<div class="bs-cts">
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Contact Name</th>
+                <th>Email Address</th>
+                <th>Contact Phone</th>
+                <th>Options</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0; i < contacts.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= contacts[i]._id %>
+                    </td>
+                    <td>
+                        <%= contacts[i].contact_name %>
+                    </td>
+                    <td>
+                        <%= contacts[i].email_address %>
+                    </td>
+                    <td>
+                        <%= contacts[i].contact_number %>
+                    </td>
+                    <td><a href='/edit/<%= contacts[i]._id %>/'>Edit</a>
+                        <a href='/delete/<%= contacts[i]._id %>/'>Delete</a>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</div>

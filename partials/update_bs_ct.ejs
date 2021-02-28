@@ -1,0 +1,11 @@
+<div class="edit-bs-ct">
+    <form class="contact-form" method="POST" action="/edit/<%= contact._id %>/">
+        <h3>Edit Business Contact</h3>
+        <input name="name" class="contact-form-inp" value="<%= contact.contact_name %>" type="text" placeholder="Edit name">
+        <input name="email" class="contact-form-inp" value="<%= contact.email_address %>" type="text" placeholder="Edit email">
+        <input name="phone" class="contact-form-inp" value="<%= contact.contact_number %>" type="text" placeholder="Edit phone">
+        <button type="submit" class="contact-form-submit-btn">Save</button>
+        <a href="/delete/<%= contact._id %>/" class="contact-form-submit-btn">Delete</a>
+    </form>
+</div>
+

@@ -1,0 +1,12 @@
+<div class="contact">
+	<div class="contact-bottom">
+		<form class="contact-form" method="POST" action="/login/">
+			<h4>Login</h4>
+			<input name="username" class="contact-form-inp" type="text" placeholder="Enter username" required>
+			<input name="password" class="contact-form-inp" type="password" placeholder="Enter password" required>
+			<button type="submit" class="contact-form-submit-btn">Submit</button>
+			<span class="login-messages"><p><%= message ? message : '' %></p></span>
+			<span class="login-messages"><p>username: admin, password: password (Revealed for testing purpose.)</p></span>
+		</form>
+	</div>
+</div>
